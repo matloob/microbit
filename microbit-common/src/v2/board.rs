@@ -135,6 +135,12 @@ pub struct Board {
 
     /// nRF52 peripheral: SAADC
     pub SAADC: pac::SAADC,
+
+    /// nRF52 peripheral: USBD
+    pub USBD: pac::USBD,
+
+    /// nRF52 peripheral SPIM0
+    pub SPIM0: pac::SPIM0,
 }
 
 impl Board {
@@ -257,6 +263,8 @@ impl Board {
             UARTE0: p.UARTE0,
             UARTE1: p.UARTE1,
             SAADC: p.SAADC,
+            USBD: p.USBD,
+            SPIM0: p.SPIM0,
         }
     }
 }
